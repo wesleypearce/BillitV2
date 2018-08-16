@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ListGroup, ListGroupItem } from 'reactstrap'
 
 const bills = [
   { id: 0, name: 'Groceries', cost: 200, dueDate: Date.now() },
@@ -8,7 +9,17 @@ const bills = [
 ]
 
 class BillViewer extends Component {
-
+  render() {
+    return (
+      <ListGroup>
+        {bills.map(({ id, name, cost, dueDate }) => (
+          <ListGroupItem key={id}>
+            {name}
+          </ListGroupItem>
+        ))}
+      </ListGroup>
+    )
+  }
 }
 
 export default BillViewer
