@@ -1,13 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './scss/index.scss'
+import App from './App'
 
-let HelloWorld = () => {
-  return (
-    <div>
-      <h1 className="display-4">Hello, World!</h1>
-    </div>
-  );
-}
-
-ReactDOM.render(<HelloWorld />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
