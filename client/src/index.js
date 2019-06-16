@@ -1,7 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
-import registerServiceWorker from './registerServiceWorker'
+import './scss/index.scss'
 
-ReactDOM.render(<App />, document.getElementById('root'))
-registerServiceWorker()
+let HelloWorld = () => {
+  return (
+    <div>
+      <h1 className="display-4">Hello, World!</h1>
+    </div>
+  );
+}
+
+ReactDOM.render(<HelloWorld />, document.getElementById('root'))
