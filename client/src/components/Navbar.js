@@ -1,4 +1,5 @@
 import React from 'react'
+import GoogleAuth from './GoogleAuth'
 
 class Navbar extends React.Component {
   render() {
@@ -32,7 +33,7 @@ class Navbar extends React.Component {
           <div className="float-right">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link text-white">Log In</a>
+                <GoogleAuth />
               </li>
             </ul>
           </div>
